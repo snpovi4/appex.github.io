@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to APPex Software Solutions</h1>
+        <h3>Panthapath, Dhaka-1206</h3>
+    </header>
+    <section class="introduction">
+        <div class="image-viewer">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/image2.JPG" alt="Image 2"></div>
+                    <div class="swiper-slide"><img src="images/image3.JPG" alt="Image 3"></div>
+                    <div class="swiper-slide"><img src="images/image4.JPG" alt="Image 4"></div>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/image5.JPG" alt="Image 5"></div>
+                        <div class="swiper-slide"><img src="images/image6.JPG" alt="Image 6"></div>
+                        <div class="swiper-slide"><img src="images/image7.JPG" alt="Image 7"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Contact-Us">
+            <div class="contact-section">
+                <div class="contact-info">
+                    <h2>Contact Us</h2>
+                    <p>Email: snpovi4@gmail.com</p>
+                    <p>Whatsapp: +880 1521522098</p>
+                </div>
+            </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Play/Pause video and Swiper initialization
+            var video = document.querySelector(".video-player video");
+            var videoControls = document.querySelector(".video-controls");
+
+            videoControls.addEventListener("click", function () {
+                if (video.paused) {
+                    video.play();
+                    videoControls.classList.add("playing");
+                } else {
+                    video.pause();
+                    videoControls.classList.remove("playing");
+                }
+            });
+
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
+</body>
+</html>
